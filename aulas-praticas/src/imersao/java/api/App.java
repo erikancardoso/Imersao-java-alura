@@ -49,7 +49,8 @@ public class App {
             System.out.println(verTodos.get("image"));
             System.out.println();
         }
-        System.out.println();
+        System.out.println("Ordenar por classificação");
+
 
     }
 
