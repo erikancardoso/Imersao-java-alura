@@ -1,4 +1,4 @@
-package imerssao.java.api;
+package imersao.java.api;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -8,7 +8,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class JsonParse {
-    private static final Pattern REGEX_ITENS = Pattern.compile(".*\\[(.+)\\].*"); //expressões regulares
+    private static final Pattern REGEX_ITENS = Pattern.compile(".*\\[(.+)\\].*"); //expressões regulares para pegar itens
     private static final Pattern REGEX_ATRIBUTOS_JSON = Pattern.compile("\"(.+?)\":\"(.*?)\"");
     public List<Map<String, String>> parse(String json){
         Matcher matcher = REGEX_ITENS.matcher(json);
@@ -26,6 +26,8 @@ public class JsonParse {
                 String  valor = matcherAtributosJson.group(2);
                 atributosItem.put(atributo, valor);
             }
+            dadosColetatos.add(atributosItem);
         }
+        return dadosColetatos;
     }
 }
