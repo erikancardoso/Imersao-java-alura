@@ -15,6 +15,7 @@ public class Desafio {
         var request = HttpRequest.newBuilder(uri).GET().build();
         HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
         String body = response.body();
-        System.out.println("Print to Document Body: "+ bou-i0´9p);
+        //System.out.println("Print to Document Body: ");
+
     }
 }
