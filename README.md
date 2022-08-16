@@ -1,4 +1,4 @@
-# Imerssao-java-alura
+# Imersao-java-alura
 #Aula1
 >Consumindo uma API de filmes.
 
